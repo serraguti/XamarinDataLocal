@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinDataLocal.Views.AlumnosView"
+             xmlns:viewmodels="clr-namespace:XamarinDataLocal.ViewModels">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout.BindingContext>
+                <viewmodels:AlumnosViewModel/>
+            </StackLayout.BindingContext>
+            <Label Text="Alumnos Local File"
+                   FontSize="30" TextColor="Blue"
+                VerticalOptions="Start" 
+                HorizontalOptions="CenterAndExpand" />
+            <Button Text="Mostrar alumnos" TextColor="Red"
+                    Command="{Binding MostrarAlumnos}"/>
+            <ListView ItemsSource="{Binding Alumnos}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                                <StackLayout Orientation="Horizontal">
+                                <Label Text="{Binding Nombre}"
+                                           TextColor="Blue"
+                                           FontSize="20"/>
+                                <Label Text="{Binding Apellidos}"
+                                        TextColor="Chocolate"
+                                       FontSize="20"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,92 @@
+[
+    {
+      "idserie": 1,
+      "nombre": "Como conoci a vuestra madre",
+      "imagen": "https://www.formulatv.com/images/series/posters/100/133/1_m3.jpg",  
+      "valoracion": 5
+    },
+    {
+      "idserie": 2,
+      "nombre": "Campeones",
+      "imagen": "http://static.t13.cl/images/sizes/1200x675/1539297133-oliver-y-benji.jpg",	  
+      "valoracion": 5
+    },
+    {
+      "idserie": 3,
+      "nombre": "Juego de Tronos",
+      "imagen": "http://es.web.img3.acsta.net/medias/nmedia/18/75/09/69/19692838.jpg",  
+      "valoracion": 5
+    },
+    {
+      "idserie": 4,
+      "nombre": "Betty la Fea",
+      "imagen": "https://static1.lasprovincias.es/www/multimedia/201904/08/media/cortadas/136423772--624x934.jpg",	  
+      "valoracion": 1
+    },
+    {
+      "idserie": 5,
+      "nombre": "El cuento de la criada",
+      "imagen": "https://www.abc.es/media/play/2018/07/03/cuento-criada-klVD--620x349@abc.jpg",	  
+      "valoracion": 2
+    },
+    {
+      "idserie": 6,
+      "nombre": "WestWorld",
+      "imagen": "https://cdn-images-1.medium.com/max/2600/1*5hOCsrDdpixslaiqJqhhTQ.jpeg",	  
+      "valoracion": 3
+    },
+    {
+      "idserie": 7,
+      "nombre": "The Big Bang Theory",
+      "imagen": "https://www.formulatv.com/images/series/posters/100/185/1_m3.jpg",	  
+      "valoracion": 5
+    },
+    {
+      "idserie": 8,
+      "nombre": "Black Mirror",
+      "imagen": "https://occ-0-990-987.1.nflxso.net/art/69af8/548760ce6e1e0cdd20e420db7dd4304a4cd69af8.jpg",	  
+      "valoracion": 5
+    },
+    {
+      "idserie": 8,
+      "nombre": "Stranger Things",
+      "imagen": "https://upload.wikimedia.org/wikipedia/commons/3/38/Stranger_Things_logo.png",	  
+      "valoracion": 5
+    },
+    {
+      "idserie": 9,
+      "nombre": "True Detective",
+      "imagen": "https://ep00.epimg.net/cultura/imagenes/2014/03/11/television/1394521260_139452_1394521260_noticia_normal.jpg",	  
+      "valoracion": 4
+    },
+    {
+      "idserie": 10,
+      "nombre": "Paquita Salas",
+      "imagen": "https://35milimetros.es/wp-content/uploads/2018/07/paquita.jpg",	  
+      "valoracion": 2
+    },
+    {
+      "idserie": 11,
+      "nombre": "Peaky Blinders",
+      "imagen": "https://okdiario.com/img/2019/04/05/las-grandes-curiosidades-de-peaky-blinders-655x368.jpg",	  
+      "valoracion": 3
+    },
+    {
+      "idserie": 12,
+      "nombre": "Me llamo Earl",
+      "imagen": "https://pics.filmaffinity.com/my_name_is_earl_tv_series-192915475-large.jpg",	  
+      "valoracion": 4
+    },
+    {
+      "idserie": 13,
+      "nombre": "Las chicas del cable",
+      "imagen": "https://okdiario.com/img/2019/03/13/chicas-del-cable-655x368.jpg",	  
+      "valoracion": 1
+    },
+    {
+      "idserie": 14,
+      "nombre": "Friends",
+      "imagen": "https://images2.minutemediacdn.com/image/upload/c_fill,w_912,h_516,f_auto,q_auto,g_auto/shape/cover/entertainment/5b2fefb9fae96f45b7000002.jpeg",	  
+      "valoracion": 3
+    }
+ ]
