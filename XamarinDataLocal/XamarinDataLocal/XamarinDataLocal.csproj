@@ -13,12 +13,14 @@
   <ItemGroup>
     <None Remove="Documents\alumnos.xml" />
     <None Remove="Documents\bash.txt" />
+    <None Remove="Documents\escenaspeliculas.xml" />
     <None Remove="Documents\series.json" />
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Include="Documents\alumnos.xml" />
     <EmbeddedResource Include="Documents\bash.txt" />
+    <EmbeddedResource Include="Documents\escenaspeliculas.xml" />
     <EmbeddedResource Include="Documents\series.json" />
   </ItemGroup>
 
@@ -33,6 +35,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\CarruselSeriesView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\PeliculasView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\SeriesView.xaml">

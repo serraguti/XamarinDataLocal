@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinDataLocal.Views.PeliculasView"
+             xmlns:viewmodels="clr-namespace:XamarinDataLocal.ViewModels">
+    <ContentPage.BindingContext>
+        <viewmodels:PeliculasViewModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Peliculas" FontSize="45" TextColor="Red"
+                VerticalOptions="Start" 
+                HorizontalOptions="CenterAndExpand" />
+            <ListView ItemsSource="{Binding Peliculas}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Image WidthRequest="50" HeightRequest="70"
+                                       Source="{Binding Poster}"/>
+                                <Label Text="{Binding Titulo}"
+                                       FontSize="20" TextColor="Blue"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

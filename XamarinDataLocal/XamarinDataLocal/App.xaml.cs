@@ -11,7 +11,7 @@ namespace XamarinDataLocal
         {
             InitializeComponent();
 
-            MainPage = new CarruselSeriesView();
+            MainPage = new PeliculasView();
         }
 
         protected override void OnStart()
