@@ -8,20 +8,22 @@
         <viewmodels:PeliculasViewModel/>
     </ContentPage.BindingContext>
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Peliculas" FontSize="45" TextColor="Red"
-                VerticalOptions="Start" 
-                HorizontalOptions="CenterAndExpand" />
-            <ListView ItemsSource="{Binding Peliculas}"
+        <Grid>
+            <Image Source="fondo.jpg"
+                   Opacity="1"
+                   Aspect="AspectFill"/>
+            <StackLayout>
+                <ListView RowHeight="160" ItemsSource="{Binding Peliculas}"
                       x:Name="listviewPeliculas">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ViewCell>
-                            <templates:TemplatePeliculasSimple/>
-                        </ViewCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
-        </StackLayout>
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <templates:TemplatePeliculasComplejo/>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>
