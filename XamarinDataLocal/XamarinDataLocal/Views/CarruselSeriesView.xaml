@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinDataLocal.Views.CarruselSeriesView"
+             xmlns:viewmodels="clr-namespace:XamarinDataLocal.ViewModels"
+             xmlns:converters="clr-namespace:XamarinDataLocal.Converters">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converters:ConverterValoracionStars x:Key="converterstars"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout.BindingContext>
+                <viewmodels:SeriesViewModel/>
+            </StackLayout.BindingContext>
+            <Label Text="Series Carrusel!"
+                   FontSize="40" TextColor="Blue"
+                VerticalOptions="Start" 
+                HorizontalOptions="CenterAndExpand" />
+            <CarouselView ItemsSource="{Binding Series}">
+                <CarouselView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout>
+                            <Label FontSize="35" TextColor="Blue"
+                                   Text="{Binding Nombre}"/>
+                            <Image Source="{Binding Imagen}"
+                                   HeightRequest="400"/>
+                            <Image Source="{Binding Valoracion
+                                , Converter={StaticResource converterstars}}"/>
+                        </StackLayout>
+                    </DataTemplate>
+                </CarouselView.ItemTemplate>
+            </CarouselView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

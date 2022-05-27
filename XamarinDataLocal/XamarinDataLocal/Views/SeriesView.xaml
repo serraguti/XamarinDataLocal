@@ -22,8 +22,31 @@
                                 <StackLayout Orientation="Vertical" Spacing="10">
                                     <Label TextColor="Blue"
                                            Text="{Binding Nombre}"/>
-                                    <Label  TextColor="Red"
-                                           Text="{Binding Valoracion}"/>
+                                    <Image Source="{Binding Valoracion}"
+                                           WidthRequest="100" HeightRequest="20">
+                                        <Image.Triggers>
+<DataTrigger TargetType="Image" Binding="{Binding Valoracion}"
+             Value="1">
+    <Setter Property="Source" Value="star1.png"/>
+</DataTrigger>
+                                            <DataTrigger TargetType="Image" Binding="{Binding Valoracion}"
+             Value="2">
+                                                <Setter Property="Source" Value="star2.png"/>
+                                            </DataTrigger>
+                                            <DataTrigger TargetType="Image" Binding="{Binding Valoracion}"
+             Value="3">
+                                                <Setter Property="Source" Value="star3.png"/>
+                                            </DataTrigger>
+                                            <DataTrigger TargetType="Image" Binding="{Binding Valoracion}"
+             Value="4">
+                                                <Setter Property="Source" Value="star4.png"/>
+                                            </DataTrigger>
+                                            <DataTrigger TargetType="Image" Binding="{Binding Valoracion}"
+             Value="5">
+                                                <Setter Property="Source" Value="star5.png"/>
+                                            </DataTrigger>
+                                        </Image.Triggers>                                        
+                                    </Image>
                                 </StackLayout>
                             </StackLayout>
                         </ViewCell>

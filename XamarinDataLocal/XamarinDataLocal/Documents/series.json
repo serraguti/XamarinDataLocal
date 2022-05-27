@@ -1,22 +1,22 @@
 [
-    {
-      "idserie": 1,
-      "nombre": "Como conoci a vuestra madre",
-      "imagen": "https://www.formulatv.com/images/series/posters/100/133/1_m3.jpg",  
-      "valoracion": 5
-    },
-    {
-      "idserie": 2,
-      "nombre": "Campeones",
-      "imagen": "http://static.t13.cl/images/sizes/1200x675/1539297133-oliver-y-benji.jpg",	  
-      "valoracion": 5
-    },
-    {
-      "idserie": 3,
-      "nombre": "Juego de Tronos",
-      "imagen": "http://es.web.img3.acsta.net/medias/nmedia/18/75/09/69/19692838.jpg",  
-      "valoracion": 5
-    },
+  {
+    "idserie": 1,
+    "nombre": "Como conoci a vuestra madre",
+    "imagen": "https://www.giztele.com/wp-content/uploads/2020/07/como-conoci-a-vuestra-madre.png",
+    "valoracion": 5
+  },
+  {
+    "idserie": 2,
+    "nombre": "Campeones",
+    "imagen": "https://media.revistagq.com/photos/5e7491469da1570008d60432/master/pass/oliver-y-benji-preparan-su-llegada-a-netflix.jpg",
+    "valoracion": 5
+  },
+  {
+    "idserie": 3,
+    "nombre": "Juego de Tronos",
+    "imagen": "https://estaticos-cdn.prensaiberica.es/clip/e3d7a239-2314-45e0-8148-6b994818e6af_16-9-aspect-ratio_default_0.jpg",
+    "valoracion": 5
+  },
     {
       "idserie": 4,
       "nombre": "Betty la Fea",
@@ -38,7 +38,7 @@
     {
       "idserie": 7,
       "nombre": "The Big Bang Theory",
-      "imagen": "https://www.formulatv.com/images/series/posters/100/185/1_m3.jpg",	  
+      "imagen": "https://depor.com/resizer/16O8q2VAhnyyiUAB5oEirV4gHlE=/1200x675/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/R7NDYPIOA5ADPJGIC25N3H2FR4.jpg",	  
       "valoracion": 5
     },
     {
@@ -47,12 +47,12 @@
       "imagen": "https://occ-0-990-987.1.nflxso.net/art/69af8/548760ce6e1e0cdd20e420db7dd4304a4cd69af8.jpg",	  
       "valoracion": 5
     },
-    {
-      "idserie": 8,
-      "nombre": "Stranger Things",
-      "imagen": "https://upload.wikimedia.org/wikipedia/commons/3/38/Stranger_Things_logo.png",	  
-      "valoracion": 5
-    },
+  {
+    "idserie": 8,
+    "nombre": "Stranger Things",
+    "imagen": "https://media.timeout.com/images/105882317/750/422/image.jpg",
+    "valoracion": 5
+  },
     {
       "idserie": 9,
       "nombre": "True Detective",
@@ -62,7 +62,7 @@
     {
       "idserie": 10,
       "nombre": "Paquita Salas",
-      "imagen": "https://35milimetros.es/wp-content/uploads/2018/07/paquita.jpg",	  
+      "imagen": "https://static.tvtropes.org/pmwiki/pub/images/paquita_salas.png",	  
       "valoracion": 2
     },
     {
