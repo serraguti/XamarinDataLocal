@@ -17,22 +17,6 @@ namespace XamarinDataLocal.Views
         public PeliculasView()
         {
             InitializeComponent();
-            this.listviewPeliculas.ItemSelected += ListviewPeliculas_ItemSelected;
-        }
-
-        private async void ListviewPeliculas_ItemSelected(object sender
-            , SelectedItemChangedEventArgs e)
-        {
-            Pelicula peliculaSeleccionada = e.SelectedItem as Pelicula;
-            //CREAMOS EL VIEWMODEL
-            PeliculaViewModel viewmodel = new PeliculaViewModel();
-            //INDICAMOS AL VIEWMODEL LA PELICULA A MOSTRAR
-            viewmodel.Pelicula = peliculaSeleccionada;
-            //CREAMOS LA VISTA DE ESCENAS
-            EscenasView view = new EscenasView();
-            //INDICAMOS EL VIEWMODEL DE LA VISTA
-            view.BindingContext = viewmodel;
-            await Navigation.PushModalAsync(view);
         }
     }
 }

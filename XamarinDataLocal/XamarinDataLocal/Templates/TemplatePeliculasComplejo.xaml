@@ -15,6 +15,9 @@
                 <StackLayout Grid.Column="1" Spacing="0" Padding="0,5">
                     <Label Text="{Binding Titulo}" 
                            Style="{DynamicResource TituloLabelStyle}"/>
+                    <Button Text="Escenas"
+                            Style="{DynamicResource SocialStyle}"
+                            Command="{Binding ShowEscenas}"/>
                 </StackLayout>
                 <StackLayout Grid.Column="1" Orientation="Horizontal" Spacing="4" 
                              HorizontalOptions="End" Padding="0" VerticalOptions="End">

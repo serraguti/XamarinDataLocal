@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="XamarinDataLocal.Views.PeliculasView"
              xmlns:viewmodels="clr-namespace:XamarinDataLocal.ViewModels"
-             xmlns:templates="clr-namespace:XamarinDataLocal.Templates">
+             xmlns:templates="clr-namespace:XamarinDataLocal.Templates"
+             xmlns:customcontrols="clr-namespace:XamarinDataLocal.CustomControls">
     <ContentPage.BindingContext>
         <viewmodels:PeliculasViewModel/>
     </ContentPage.BindingContext>
@@ -13,13 +14,15 @@
                    Opacity="1"
                    Aspect="AspectFill"/>
             <StackLayout>
-                <ListView RowHeight="160" ItemsSource="{Binding Peliculas}"
-                      x:Name="listviewPeliculas">
+                <ListView RowHeight="160" 
+                          ItemsSource="{Binding Peliculas}"
+                          SelectedItem="{Binding PeliculaSeleccionada}">
                     <ListView.ItemTemplate>
                         <DataTemplate>
-                            <ViewCell>
+                            <customcontrols:CustomControlViewCell
+                                SelectedItemBackgroundColor="White">
                                 <templates:TemplatePeliculasComplejo/>
-                            </ViewCell>
+                            </customcontrols:CustomControlViewCell>
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
