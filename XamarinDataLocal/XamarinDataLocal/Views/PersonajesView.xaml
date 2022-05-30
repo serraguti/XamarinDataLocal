@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinDataLocal.Views.PersonajesView"
+             xmlns:viewmodels="clr-namespace:XamarinDataLocal.ViewModels">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout.BindingContext>
+                <viewmodels:PersonajesViewModel/>
+            </StackLayout.BindingContext>
+            <Label Text="Personajes Realm"
+                VerticalOptions="Start" FontSize="25"
+                HorizontalOptions="CenterAndExpand" />
+            <Button Text="Editar personaje"
+                    Command="{Binding Edicion}"/>
+            <Button Text="Cargar Personajes"
+                    Command="{Binding CargarPersonajes}"/>
+            <ListView ItemsSource="{Binding Personajes}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="{Binding IdPersonaje}"/>
+                                <Label Text="{Binding Nombre}" TextColor="Blue"/>
+                                <Label Text="{Binding Serie}" TextColor="Red"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinDataLocal.Views.PersonajeEdicionView"
+             xmlns:viewmodels="clr-namespace:XamarinDataLocal.ViewModels">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout.BindingContext>
+                <viewmodels:PersonajeViewModel/>
+            </StackLayout.BindingContext>
+            <Label Text="Edicion de personaje"
+                   FontSize="25"
+                VerticalOptions="Start" 
+                HorizontalOptions="CenterAndExpand" />
+            <Label Text="Id Personaje"/>
+            <Entry Text="{Binding Personaje.IdPersonaje}"
+                   Placeholder="Id Personaje"/>
+            <Label Text="Nombre"/>
+            <Entry Text="{Binding Personaje.Nombre}"/>
+            <Label Text="Serie"/>
+            <Entry Text="{Binding Personaje.Serie}"/>
+            <Button Text="Insertar personaje"
+                    Command="{Binding Insertar}"/>
+            <Button Text="Modificar personaje"
+                    Command="{Binding Modificar}"/>
+            <Button Text="Eliminar Personaje"
+                    Command="{Binding Eliminar}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
