@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinDataLocal.Views.MainDepartamentosView">
+    <ContentPage.Content>
+        <ScrollView Orientation="Vertical">
+            <StackLayout>
+                <Label Text="Main Departamentos"
+                   FontSize="25" TextColor="Blue"
+                VerticalOptions="Start" 
+                HorizontalOptions="CenterAndExpand" />
+                <Label x:Name="labelMensaje" TextColor="Red"/>
+                <Entry x:Name="cajaId" Placeholder="Id Departamento"/>
+                <Entry x:Name="cajaNombre" Placeholder="Nombre departamento"/>
+                <Entry x:Name="cajaLocalidad" Placeholder="Localidad"/>
+                <Button x:Name="botonCrear" Text="Crear BBDD"/>
+                <Button x:Name="botonMostrar" Text="Mostrar departamentos"/>
+                <Button x:Name="botonInsertar" Text="Insertar departamento"/>
+                <Button x:Name="botonModificar" Text="Modificar departamento"/>
+                <Button x:Name="botonEliminar" Text="Eliminar departamento"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

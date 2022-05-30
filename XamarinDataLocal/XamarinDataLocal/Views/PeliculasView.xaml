@@ -4,7 +4,8 @@
              x:Class="XamarinDataLocal.Views.PeliculasView"
              xmlns:viewmodels="clr-namespace:XamarinDataLocal.ViewModels"
              xmlns:templates="clr-namespace:XamarinDataLocal.Templates"
-             xmlns:customcontrols="clr-namespace:XamarinDataLocal.CustomControls">
+             xmlns:customcontrols="clr-namespace:XamarinDataLocal.CustomControls"
+             x:Name="PagePeliculas">
     <ContentPage.BindingContext>
         <viewmodels:PeliculasViewModel/>
     </ContentPage.BindingContext>
@@ -21,7 +22,39 @@
                         <DataTemplate>
                             <customcontrols:CustomControlViewCell
                                 SelectedItemBackgroundColor="White">
-                                <templates:TemplatePeliculasComplejo/>
+                                <StackLayout Spacing="0" Padding="0">
+                                    <Grid Style="{DynamicResource CardStyle}">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="90"/>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="5"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Image Grid.Column="0" 
+                       Source="{Binding Poster}"/>
+                                        <StackLayout Grid.Column="1" Spacing="0" Padding="0,5">
+                                            <Label Text="{Binding Titulo}" 
+                           Style="{DynamicResource TituloLabelStyle}"/>
+                                            <Button Text="Escenas"
+                            Style="{DynamicResource SocialStyle}"
+                            Command="{Binding BindingContext.ShowEscenas
+                        , Source={x:Reference PagePeliculas}}"/>
+                                        </StackLayout>
+                                        <StackLayout Grid.Column="1" Orientation="Horizontal" Spacing="4" 
+                             HorizontalOptions="End" Padding="0" VerticalOptions="End">
+                                            <Label Text="144 Followers" FontAttributes="Bold" 
+                           Style="{DynamicResource SocialStyle}"/>
+                                        </StackLayout>
+                                    </Grid>
+                                    <BoxView BackgroundColor="Black" HeightRequest="0.5"></BoxView>
+                                    <Grid Style="{DynamicResource TituloOriginalStyle}">
+                                        <StackLayout Orientation="Horizontal">
+                                            <Label Text="{Binding TituloOriginal}" 
+                           FontSize="20"
+                           Style="{DynamicResource TituloOriginalLabelStyle}"/>
+                                        </StackLayout>
+                                    </Grid>
+                                    <BoxView Style="{DynamicResource ShadowStyle}"></BoxView>
+                                </StackLayout>
                             </customcontrols:CustomControlViewCell>
                         </DataTemplate>
                     </ListView.ItemTemplate>

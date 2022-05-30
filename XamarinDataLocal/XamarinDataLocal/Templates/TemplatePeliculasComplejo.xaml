@@ -2,7 +2,7 @@
 <ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="XamarinDataLocal.Templates.TemplatePeliculasComplejo">
-  <ContentView.Content>
+    <ContentView.Content>
         <StackLayout Spacing="0" Padding="0">
             <Grid Style="{DynamicResource CardStyle}">
                 <Grid.ColumnDefinitions>
@@ -17,7 +17,8 @@
                            Style="{DynamicResource TituloLabelStyle}"/>
                     <Button Text="Escenas"
                             Style="{DynamicResource SocialStyle}"
-                            Command="{Binding ShowEscenas}"/>
+                            Command="{Binding BindingContext.ShowEscenas
+                        , Source={x:Reference PagePeliculas}}"/>
                 </StackLayout>
                 <StackLayout Grid.Column="1" Orientation="Horizontal" Spacing="4" 
                              HorizontalOptions="End" Padding="0" VerticalOptions="End">

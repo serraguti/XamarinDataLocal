@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinDataLocal.Views.ContactosView"
+             xmlns:viewmodels="clr-namespace:XamarinDataLocal.ViewModels">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout.BindingContext>
+                <viewmodels:ContactosViewModel/>
+            </StackLayout.BindingContext>
+            <Label Text="Dependency Service"
+                   FontSize="30"
+                VerticalOptions="Start" 
+                HorizontalOptions="CenterAndExpand" />
+            <Button Text="Mostrar contactos"
+                    Command="{Binding MostrarContactos}"/>
+            <ListView ItemsSource="{Binding Contactos}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="{Binding Nombre}"
+                                       TextColor="Blue"
+                                       FontSize="15"/>
+                                <Label Text="{Binding Telefono}"
+                                       TextColor="Red"
+                                       FontSize="15"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
