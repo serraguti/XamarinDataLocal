@@ -25,6 +25,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Autofac" Version="6.4.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
     <PackageReference Include="Realm" Version="10.13.0" />
     <PackageReference Include="sqlite-net-pcl" Version="1.8.116" />

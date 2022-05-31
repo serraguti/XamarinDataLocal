@@ -13,9 +13,9 @@ namespace XamarinDataLocal.ViewModels
     public class PersonajesViewModel: ViewModelBase
     {
         private RepositoryPersonajes repo;
-        public PersonajesViewModel()
+        public PersonajesViewModel(RepositoryPersonajes repo)
         {
-            this.repo = new RepositoryPersonajes();
+            this.repo = repo;
             this.Personajes =
                 new ObservableCollection<Personaje>(this.repo.GetPersonajes());
         }
