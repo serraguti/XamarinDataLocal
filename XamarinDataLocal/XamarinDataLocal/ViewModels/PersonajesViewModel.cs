@@ -20,6 +20,17 @@ namespace XamarinDataLocal.ViewModels
                 new ObservableCollection<Personaje>(this.repo.GetPersonajes());
         }
 
+        private Personaje _PersonajeSeleccionado;
+
+        public Personaje PersonajeSeleccionado
+        {
+            get { return this._PersonajeSeleccionado; }
+            set {
+                this._PersonajeSeleccionado = value;
+                OnPropertyChanged("PersonajeSeleccionado");
+            }
+        }
+
         private ObservableCollection<Personaje> _Personajes;
         public ObservableCollection<Personaje> Personajes
         {
@@ -37,6 +48,16 @@ namespace XamarinDataLocal.ViewModels
                 return new Command(async () =>
                 {
                     PersonajeEdicionView view = new PersonajeEdicionView();
+                    PersonajeViewModel viewmodel = new PersonajeViewModel();
+                    if (this.PersonajeSeleccionado != null)
+                    {
+                        viewmodel.Personaje = this.PersonajeSeleccionado;
+                    }
+                    else
+                    {
+                        viewmodel.Personaje = new Personaje();
+                    }
+                    view.BindingContext = viewmodel;
                     await 
                     Application.Current.MainPage.Navigation.PushModalAsync(view);
                 });

@@ -5,9 +5,6 @@
              xmlns:viewmodels="clr-namespace:XamarinDataLocal.ViewModels">
     <ContentPage.Content>
         <StackLayout>
-            <StackLayout.BindingContext>
-                <viewmodels:PersonajeViewModel/>
-            </StackLayout.BindingContext>
             <Label Text="Edicion de personaje"
                    FontSize="25"
                 VerticalOptions="Start" 

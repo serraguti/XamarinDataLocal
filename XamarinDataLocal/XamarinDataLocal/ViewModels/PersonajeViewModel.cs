@@ -15,7 +15,6 @@ namespace XamarinDataLocal.ViewModels
         public PersonajeViewModel()
         {
             this.repo = new RepositoryPersonajes();
-            this.Personaje = new Personaje();
         }
 
         private Personaje _Personaje;

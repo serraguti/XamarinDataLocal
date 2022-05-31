@@ -15,7 +15,8 @@
                     Command="{Binding Edicion}"/>
             <Button Text="Cargar Personajes"
                     Command="{Binding CargarPersonajes}"/>
-            <ListView ItemsSource="{Binding Personajes}">
+            <ListView ItemsSource="{Binding Personajes}"
+                      SelectedItem="{Binding PersonajeSeleccionado}">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
